@@ -10,20 +10,35 @@ export const newsItemType = defineType({
       type: 'string',
     }),
     defineField({
-      name: 'datePosted',
-      type: 'date',
+      name: 'postedAt',
+      type: 'datetime',
     }),
     defineField({
-      name: 'id',
-      type: 'number',
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+        slugify: (input) =>
+          input
+            .toLowerCase()
+            .trim()
+            .replace(/[^\w\s-]/g, '')   // remove non-word chars
+            .replace(/\s+/g, '-')      // spaces -> dashes
+            .replace(/-+/g, '-'),      // collapse multiple dashes
+      },
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: 'body',
+      name: 'shortenedContent',
       type: 'text',
     }),
     defineField({
-      name: 'image',
-      type: 'image',
+      title: 'Content', 
+      name: 'content',
+      type: 'array', 
+      of: [{type: 'block'}, {type:'image'}]
     })
   ],
 })
