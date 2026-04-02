@@ -10,6 +10,10 @@ export const newsItemType = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'datePosted',
+      type: 'date',
+    }),
+    defineField({
       name: 'id',
       type: 'number',
     }),
