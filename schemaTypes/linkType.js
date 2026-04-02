@@ -6,12 +6,20 @@ export const linkType = defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'title',
+      name: 'name',
       type: 'string',
     }),
     defineField({
-      name: 'url',
-      type: 'url',
+      name: 'twitter',
+      type: 'string',
+    }),
+    defineField({
+      name: 'facebook',
+      type: 'string',
+    }),
+    defineField({
+      name: 'instagram',
+      type: 'string',
     }),
   ],
 })
