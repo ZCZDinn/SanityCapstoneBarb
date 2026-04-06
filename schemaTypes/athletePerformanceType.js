@@ -61,7 +61,8 @@ export const athletePerformanceType = defineType({
     {
       name: 'roadHighPerformanceAddress',
       title: 'Road High Performance Address',
-      type: 'text',
+      type: 'array',
+      of: [{type: 'block'}],
       description: 'email address for road coach'
     },
     {
@@ -72,7 +73,8 @@ export const athletePerformanceType = defineType({
     {
       name: 'mountainHighPerformanceAddress',
       title: 'Mountain High Performance Address',
-      type: 'text',
+      type: 'array',
+      of: [{type: 'block'}],
       description: 'email address for mountain biking coach'
     },
         {
@@ -124,7 +126,8 @@ export const athletePerformanceType = defineType({
     {
       name: 'teamExpectations',
       title: 'Team Expectations',
-      type: 'text',
+      type: 'array',
+      of: [{type: 'block'}],
       description: 'Description of team expectations for athletes'}
     ],
 })
