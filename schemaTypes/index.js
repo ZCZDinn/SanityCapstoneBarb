@@ -5,5 +5,6 @@ import {athletePerformanceType} from './athletePerformanceType'
 import {nlCyclingEventsType} from './nlCyclingEventsType'
 import {linkType} from './linkType'
 import {contactInfoType} from './contactInfoType'
+import {eventItemType} from './eventsItemType'
 
-export const schemaTypes = [newsItemType, companyInfoType, membershipInsuranceType, athletePerformanceType, nlCyclingEventsType, contactInfoType, linkType]
+export const schemaTypes = [newsItemType, eventItemType, companyInfoType, membershipInsuranceType, athletePerformanceType, nlCyclingEventsType, contactInfoType, linkType]
