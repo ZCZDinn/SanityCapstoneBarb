@@ -11,7 +11,7 @@ export const membershipInsuranceType = defineType({
     }),
     defineField({
       name: 'order',
-      type: 'string',
+      type: 'number',
     }),
     defineField({
         title: 'Content', 

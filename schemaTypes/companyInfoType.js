@@ -11,7 +11,7 @@ export const companyInfoType = defineType({
     }),
     defineField({
       name: 'order',
-      type: 'string',
+      type: 'number',
     }),
     defineField({
         title: 'Content', 
